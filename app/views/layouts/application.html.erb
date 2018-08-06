@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Aerosprout</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <div class="logo"><%= link_to 'AEROSPROUT', root_path %></div>
+
+    <header>
+      <nav>
+        <ul>
+          <li><%= link_to 'WHAT WE DO', what_we_do_path %></li>
+          <li><%= link_to 'CONTACT US', contact_us_path %></li>
+          <li><div class="getinvolved"><%= link_to 'GET INVOLVED', get_involved_path %></div></li>
+        </ul>
+
+        <img src="/assets/threelines.png" id="menu-icon" width=22 height=18>
+      </nav>
+    </header>
+
+    <%= yield %>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+
+  <head>
+
+    <title>Aerosprout</title>
+    <%= stylesheet_link_tag '/assets/stylesheets/index-style' %>
+    <!--  <script type="text/javascript" src="script.js"></script>  -->
+
+  </head>
+
+    <div class="sustainability">
+      Sustainability
+    </div>
+    <div class="background">
+      STARTS WITH YOU
+    </div>
+
+    <button class="learnmore"><%= link_to 'LEARN MORE', what_we_do_path %></button>
+
+
+    <h1>We conserve land through outreach, education, and research.</h1>
+
+    <div class="container">
+      <p>
+      As our population increases exponentially, food is becoming more and more scarce.
+      With over 800 million people going hungry and 13% of the world malnourished, this is a major issue the needs to be addressed.
+      Learn more about how hydroponics may be the solution.
+      </p>
+    </div class="container">
+
+
+
+    <div class="row">
+      <div class="column">
+        <div class="about_container">
+          <img src="/assets/hydroponic2home.jpg" width=100%>
+        </div>
+        <div class="link_title">ABOUT</div>
+        <div class="linktext">Find out about our organization, mission, our methods, and the results of advocacy.</div>
+        <div class="link_link"><%= link_to 'Learn More →', what_we_do_path, :style => 'color: #20B2AA'; %></div>
+      </div>
+      <div class="column">
+        <div class="getinvolved_container">
+          <img src="/assets/tomatoeshome.jpg" width=100%>
+        </div>
+        <div class="link_title">TAKE ACTION</div>
+        <div class="linktext">Ready to take the next step? You can become a contributor to our cause!</div>
+        <div class="link_link"><%= link_to 'Find Out How →', get_involved_path, :style => 'color: #20B2AA'; %></div>
+      </div>
+    </div>
+
+    <footer>
+      <p>980-338-0972 AEROSPROUT18@GMAIL.COM</p>
+    </footer>
+
+</body>
+
+</html>

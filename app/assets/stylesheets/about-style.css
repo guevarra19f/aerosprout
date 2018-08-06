@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300italic');
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+@media screen and (min-width: 771px) {
+  .logo {
+    top: 30px;
+    left: 20px;
+    font-size: 18px;
+  }
+  .getinvolved{
+    background-color: transparent;
+    border: 2px solid white;
+    position: absolute;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 128px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    top: 20px;
+  }
+  .getinvolved:hover{
+    background-color: white;
+    color: black;
+  }
+  #menu-icon {
+    display: none;
+  }
+  nav {
+    right: 140px;
+  }
+}
+@media screen and (max-width: 770px) {
+  .logo {
+    top: 20px;
+    left: 20px;
+    font-size: 14px;
+  }
+  #menu-icon {
+		display: block;
+    padding-bottom: 6px;
+	}
+  nav {
+    right: 20px;
+  }
+	nav ul, nav:active ul {
+    display: none;
+		position: absolute;
+		background: #212121;
+		right: -15px;
+		top: 30px;
+		width: 120px;
+    height: 160px;
+	}
+  ul {
+    -webkit-padding-start: 15px;
+  }
+	nav li {
+		text-align: left;
+		width: 100%;
+		padding: 20px 0;
+	}
+	nav:hover ul {
+		display: block;
+	}
+}
+
+
+
+.background{
+  background:
+      linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),
+  url("assets/images/hydroponic2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+header {
+	width: 100%;
+	height: 76px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+nav {
+	padding-top: 20px;
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11.5px;
+  letter-spacing: 1.5px;
+  word-spacing: 2px;
+}
+#menu-icon {
+	width: 22px;
+	height: 18px;
+}
+li {
+	display: inline-block;
+	float: left;
+	padding-top: 2px;
+  padding-right: 36px;
+}
+a:link{
+  text-decoration: none;
+  color: white;
+}
+a:visited{
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  text-decoration: none;
+  opacity: 0.75;
+}
+.logo{
+  position: absolute;
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  letter-spacing: 2px;
+}
+.backgroundtext p{
+  position: absolute;
+  line-height: 29px;
+  color: #696969;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0 20px 20px;
+}
+hr {
+  border-style: solid;
+  border-width: .5px;
+  color: #C0C0C0;
+}
+
+
+
+
+
+
+
+
+
+footer{
+  position: absolute;
+  width: 100%;
+  background-color: #202020;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #C0C0C0;
+  letter-spacing: 2px;
+  word-spacing: 12px;
+}
+@media screen and (min-width: 990px) {
+  .backgroundtext p {
+    width: 950px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+  hr {
+    width: 950px;
+  }
+}
+@media screen and (max-width: 990px) {
+  hr {
+    margin: 8px 20px 0;
+  }
+}
+@media screen and (min-width: 641px) {
+  .background {
+    height: 508px;
+    letter-spacing: 3.5px;
+    line-height: 524px;
+    vertical-align: middle;
+    font-size: 64px;
+  }
+  .backgroundtext p {
+    top: 582px;
+  }
+  footer {
+    height: 156px;
+    line-height: 125px;
+    margin-top: 115px;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .background {
+    font-size: 28px;
+    height: 449px;
+    letter-spacing: 2px;
+    line-height: 470px;
+    vertical-align: middle;
+  }
+  .backgroundtext p {
+    top: 486px;
+  }
+  hr {
+    margin: 80px 20px 0;
+  }
+  footer {
+    height: 96px;
+    line-height: 76px;
+    margin-top: 30px;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300italic');
+
+@media screen and (min-width: 771px) {
+  .background {
+    height: 648px;
+    letter-spacing: 3.5px;
+    line-height: 640px;
+    vertical-align: middle;
+    font-size: 64px;
+  }
+  .sustainability {
+    font-size: 24px;
+    top: 235px;
+  }
+  .learnmore {
+    top: 408px;
+    width: 162px;
+    font-size: 13px;
+    padding: 15px;
+  }
+  h1::before {
+    content: "\A\A";
+    white-space: pre-wrap;
+  }
+  .container p {
+    top: 795px;
+    width: 635px;
+    left: 50%;
+    transform: translate(-50%,0%);
+  }
+}
+@media screen and (max-width: 770px) {
+  .background {
+    font-size: 28px;
+    height: 548px;
+    letter-spacing: 2px;
+    line-height: 550px;
+    vertical-align: middle;
+  }
+  .sustainability {
+    font-size: 18px;
+    top: 225px;
+  }
+  .learnmore {
+    top: 325px;
+    width: 142px;
+    font-size: 11.5px;
+    padding: 12px;
+  }
+  h1::before {
+    content: "\A";
+    white-space: pre-wrap;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  .container p {
+    top: 660px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+
+
+.background{
+  background:
+      linear-gradient(
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+      ),
+  url("/assets/hydroponic1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+.sustainability{
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  text-align: center;
+  letter-spacing: 1px;
+  color: white;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0%);
+  -ms-transform: translate(-50%,-50%);
+}
+.learnmore{
+  background-color: #20B2AA;
+  border: none;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+  color: white;
+  text-align: center;
+  border-radius: 30px;
+  cursor: pointer;
+}
+a:link{
+  text-decoration: none;
+  color: white;
+}
+a:visited{
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  text-decoration: none;
+  opacity: 0.75;
+}
+.learnmore:hover{
+  opacity: 0.75;
+}
+h1{
+  font-family: 'Cormorant Garamond', serif;
+  text-align: center;
+}
+.container p{
+  position: absolute;
+  line-height: 30px;
+  color: #696969;
+  text-align: left;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0px;
+    margin-top: 280px;
+    justify-content: center;
+}
+.column {
+    flex: 25%;
+    padding: 0 20px;
+    max-width: 461px;
+}
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    display: block;
+    margin: 0 auto;
+    max-width: 461px;
+    height: 280px;
+}
+.about_container img{
+  max-width: 461px;
+  max-height: 280px;
+  height: auto;
+  object-fit: cover;
+  object-position: 0% 100%;
+}
+.getinvolved_container img{
+  max-width: 461px;
+  max-height: 280px;
+  height: auto;
+  object-fit: cover;
+  object-position: 0% 0%;
+}
+.link_title{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  color: #20B2AA;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 30px;
+}
+.linktext{
+  color: #696969;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  font-style: bold;
+  line-height: 1.5;
+  margin-top: 20px;
+  text-align: center;
+}
+.link_link{
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  font-style: bolder;
+  text-align: center;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+footer{
+  position: absolute;
+  width: 100%;
+  background-color: #202020;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #C0C0C0;
+  letter-spacing: 2px;
+  word-spacing: 12px;
+}
+@media screen and (min-width: 641px) {
+  footer {
+    height: 156px;
+    line-height: 125px;
+    margin-top: 115px;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 640px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    footer {
+      height: 96px;
+      line-height: 76px;
+      margin-top: 30px;
+      font-size: 12px;
+    }
+}
